@@ -72,7 +72,7 @@ export default function About() {
               initial={{ opacity: 0, y: 40 }}
               animate={visible ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.2 + i * 0.15 }}
-              className="card-base aspect-square p-3 sm:aspect-auto sm:p-8 hover:shadow-card-hover hover:-translate-y-1 group relative overflow-hidden"
+              className="card-base min-h-[190px] p-3 sm:aspect-auto sm:min-h-0 sm:p-8 hover:shadow-card-hover hover:-translate-y-1 group relative overflow-hidden"
             >
               <div className="absolute -top-12 -right-12 w-32 h-32 bg-pink-100/50 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="relative flex h-full flex-col justify-center gap-2 sm:flex-row sm:gap-5">

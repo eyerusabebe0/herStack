@@ -66,7 +66,7 @@ export default function Footer() {
             <ul className="space-y-2.5 text-sm text-ink-400">
               <li>herstacktech@gmail.com</li>
               <li>+251 982622917 / +251994430049</li>
-              <li>Addis Ababa, Ethiopia</li>
+              <li>Bahir Dar, Ethiopia</li>
             </ul>
             <button
               onClick={() => scrollTo('contact')}

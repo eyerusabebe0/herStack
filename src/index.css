@@ -69,7 +69,7 @@
   }
 
   .section-padding {
-    @apply py-20 md:py-28 px-5 sm:px-8;
+    @apply py-14 md:py-28 px-5 sm:px-8;
   }
 
   .container-max {

@@ -9,7 +9,7 @@ const BUDGETS = ['Starter', 'Business', 'Custom Platform'];
 const CONTACT_INFO = [
   { icon: Mail, label: 'Email', value: 'herstacktech@gmail.com' },
   { icon: Phone, label: 'Phone', value: '+251994430049 / +251 982622917' },
-  { icon: MapPin, label: 'Location', value: 'Addis Ababa, Ethiopia' },
+  { icon: MapPin, label: 'Location', value: 'Bahir Dar, Ethiopia' },
 ];
 
 export default function Contact() {

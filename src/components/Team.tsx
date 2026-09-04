@@ -68,7 +68,7 @@ export default function Team() {
                 transition={{ duration: 0.65, delay: index * 0.15 }}
                 className="group"
               >
-                <div className="relative overflow-hidden rounded-xl sm:rounded-2xl bg-pink-100 aspect-square sm:aspect-[3/4] shadow-card group-hover:shadow-card-hover transition-shadow duration-500">
+                <div className="relative overflow-hidden rounded-xl sm:rounded-2xl bg-pink-100 aspect-[3/4] sm:aspect-[3/4] shadow-card group-hover:shadow-card-hover transition-shadow duration-500">
                   <img
                     src={member.image}
                     alt={member.name}
