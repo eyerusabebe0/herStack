@@ -12,7 +12,7 @@ const STATS = [
 const OFFER_POINTS = [
   { icon: Globe, label: 'Web Development' },
   { icon: Settings, label: 'System Development' },
-  { icon: Smartphone, label: 'Mobile App' },
+ 
 ];
 
 export default function Hero() {

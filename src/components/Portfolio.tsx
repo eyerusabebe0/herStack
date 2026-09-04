@@ -9,7 +9,7 @@ import menuImage from '@/assets/hero/menu.jpg';
 import clinicImage from '@/assets/clinic.png';
 import cakeImage from '@/assets/cake.png';
 
-type Category = 'Website Development' | 'System Development' | 'Mobile App';
+type Category = 'Website Development' | 'System Development' ;
 
 interface Project {
   title: string;
@@ -63,7 +63,7 @@ const PROJECTS: Project[] = [
   },
   {
     title: 'MK Digital Menu',
-    category: 'Mobile App',
+    category: 'Website Development',
     description: 'Digital menu experience for restaurants with ordering and engagement.',
     image: menuImage,
     hasGithub: false,
@@ -81,14 +81,13 @@ const PROJECTS: Project[] = [
   },
 ];
 
-const FILTERS = ['All', 'Websites', 'Systems', 'Mobile App'] as const;
+const FILTERS = ['All', 'Websites', 'Systems'] as const;
 type Filter = (typeof FILTERS)[number];
 
 const FILTER_MAP: Record<Filter, Category[]> = {
-  All: ['Website Development', 'System Development', 'Mobile App'],
+  All: ['Website Development', 'System Development'],
   Websites: ['Website Development'],
   Systems: ['System Development'],
-  'Mobile App': ['Mobile App'],
 };
 
 export default function Portfolio() {
