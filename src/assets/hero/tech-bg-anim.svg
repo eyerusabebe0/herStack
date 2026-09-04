@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="gradA" x1="0" x2="1">
+      <stop offset="0%" stop-color="#07132a" />
+      <stop offset="50%" stop-color="#0ea5ff" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.14" />
+    </linearGradient>
+
+    <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#34d399" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="60" result="b" />
+    </filter>
+
+    <pattern id="grid" width="160" height="160" patternUnits="userSpaceOnUse">
+      <path d="M160 0 L0 0 0 160" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#gradA)" />
+
+  <!-- drifting orbs -->
+  <g filter="url(#blur)" opacity="0.9">
+    <circle cx="200" cy="220" r="180" fill="url(#orb)">
+      <animate attributeName="cx" dur="20s" values="200;300;1400;200" repeatCount="indefinite" />
+      <animate attributeName="cy" dur="18s" values="220;120;700;220" repeatCount="indefinite" />
+      <animate attributeName="r" dur="10s" values="160;200;180" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1200" cy="160" r="140" fill="#7c3aed" fill-opacity="0.12">
+      <animate attributeName="cx" dur="26s" values="1200;1000;400;1200" repeatCount="indefinite" />
+      <animate attributeName="cy" dur="22s" values="160;240;600;160" repeatCount="indefinite" />
+    </circle>
+    <circle cx="900" cy="720" r="220" fill="#06b6d4" fill-opacity="0.06">
+      <animate attributeName="cx" dur="30s" values="900;700;1300;900" repeatCount="indefinite" />
+      <animate attributeName="cy" dur="28s" values="720;620;820;720" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- subtle circuit lines -->
+  <g stroke="#ffffff" stroke-opacity="0.06" stroke-width="1" fill="none">
+    <path d="M80 120 L400 120 L400 320 L760 320 L760 200 L1200 200" />
+    <path d="M160 640 L520 640 L520 480 L880 480 L880 600 L1360 600" />
+  </g>
+
+  <!-- grid overlay -->
+  <rect width="1600" height="900" fill="url(#grid)" opacity="0.06" />
+
+  <!-- small circuit nodes -->
+  <g fill="#ffffff" fill-opacity="0.9">
+    <rect x="120" y="150" width="8" height="8" rx="2" fill="#0ea5ff" />
+    <rect x="380" y="300" width="6" height="6" rx="2" fill="#7c3aed" />
+    <rect x="760" y="460" width="6" height="6" rx="2" fill="#06b6d4" />
+    <rect x="1180" y="240" width="6" height="6" rx="2" fill="#34d399" />
+  </g>
+
+  <!-- diagonal motion stripes for depth -->
+  <g opacity="0.02" fill="#ffffff">
+    <rect x="0" y="0" width="1600" height="900" transform="skewX(-18)" />
+  </g>
+
+  <!-- decorative wave -->
+  <path d="M0,600 C300,520 600,720 900,640 C1200,560 1500,680 1600,620 L1600,900 L0,900 Z" fill="#07132a" opacity="0.22">
+    <animate attributeName="opacity" dur="6s" values="0.18;0.26;0.18" repeatCount="indefinite" />
+  </path>
+
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#0ea5ff" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.18" />
+    </linearGradient>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0ea5ff" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.06" />
+    </linearGradient>
+    <filter id="f1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="b" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.8 0" in="b"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#g1)" />
+
+  <!-- animated-looking blurred orbs -->
+  <g filter="url(#f1)">
+    <circle cx="300" cy="220" r="200" fill="#0ea5ff" opacity="0.12" />
+    <circle cx="1200" cy="180" r="160" fill="#7c3aed" opacity="0.12" />
+    <circle cx="900" cy="700" r="260" fill="#06b6d4" opacity="0.06" />
+  </g>
+
+  <!-- grid lines / circuit pattern -->
+  <g stroke="#ffffff" stroke-opacity="0.08" stroke-width="1">
+    <!-- vertical lines -->
+    <g transform="translate(0,0)">
+      <line x1="80" x2="80" y1="0" y2="900" />
+      <line x1="240" x2="240" y1="0" y2="900" />
+      <line x1="400" x2="400" y1="0" y2="900" />
+      <line x1="560" x2="560" y1="0" y2="900" />
+      <line x1="720" x2="720" y1="0" y2="900" />
+      <line x1="880" x2="880" y1="0" y2="900" />
+      <line x1="1040" x2="1040" y1="0" y2="900" />
+      <line x1="1200" x2="1200" y1="0" y2="900" />
+    </g>
+    <!-- horizontal lines -->
+    <g>
+      <line x1="0" x2="1600" y1="80" y2="80" />
+      <line x1="0" x2="1600" y1="200" y2="200" />
+      <line x1="0" x2="1600" y1="320" y2="320" />
+      <line x1="0" x2="1600" y1="440" y2="440" />
+      <line x1="0" x2="1600" y1="560" y2="560" />
+      <line x1="0" x2="1600" y1="680" y2="680" />
+    </g>
+  </g>
+
+  <!-- simple circuit nodes -->
+  <g fill="#ffffff" fill-opacity="0.9">
+    <rect x="120" y="150" width="8" height="8" rx="2" fill="#0ea5ff" />
+    <rect x="380" y="300" width="8" height="8" rx="2" fill="#7c3aed" />
+    <rect x="760" y="460" width="8" height="8" rx="2" fill="#06b6d4" />
+    <rect x="1180" y="240" width="8" height="8" rx="2" fill="#34d399" />
+  </g>
+
+  <!-- vector wave lines for motion feel -->
+  <path d="M0,600 C300,520 600,720 900,640 C1200,560 1500,680 1600,620 L1600,900 L0,900 Z" fill="url(#g2)" opacity="0.4" />
+
+  <!-- subtle diagonal stripes -->
+  <g opacity="0.03" fill="#ffffff">
+    <rect x="0" y="0" width="1600" height="900" transform="skewX(-20)" />
+  </g>
+
+  <!-- optional small animated dots (static in SVG) -->
+  <g>
+    <circle cx="420" cy="200" r="3" fill="#fff" opacity="0.9" />
+    <circle cx="980" cy="150" r="2.5" fill="#fff" opacity="0.7" />
+    <circle cx="640" cy="620" r="2.5" fill="#fff" opacity="0.6" />
+  </g>
+</svg>
