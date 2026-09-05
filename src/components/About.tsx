@@ -14,7 +14,7 @@ const VM_CARDS = [
     icon: Target,
     label: 'Our Mission',
     description:
-      'To help businesses grow through modern website, system, and mobile app development — combining creativity, technology, and user-focused design.',
+      'To help businesses grow through modern website and system development — combining creativity, technology, and user-focused design.',
   },
 ];
 

@@ -29,7 +29,7 @@ const TEAM = [
     socials: {
       linkedin: 'https://www.linkedin.com/in/eyerus-abebe-484303370',
       github: 'https://github.com/eyerusabebe0',
-      email: 'mailto:jeryabebe1321.com',
+      email: 'mailto:jeryabebe1321@gmail.com',
     },
   },
 ];

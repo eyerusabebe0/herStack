@@ -21,12 +21,7 @@ const SERVICES = [
     description: 'Keep your site secure, updated, fast, and running smoothly.',
     features: ['Bug fixing', 'Performance', 'Security updates', 'Technical support'],
   },
-  {
-    icon: Smartphone,
-    title: 'Mobile App',
-    description: 'iOS and Android apps that keep customers engaged on the go.',
-    features: ['iOS & Android', 'Push notifications', 'App/Play Store release', 'Offline support'],
-  },
+
 ];
 
 export default function Services() {

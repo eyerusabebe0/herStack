@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, CheckCircle2 } from 'lucide-react';
 import { useReveal } from '@/lib/hooks';
 
-const SERVICES = ['Website Development', 'System Development', 'Website Maintenance', 'Mobile App'];
+const SERVICES = ['Website Development', 'System Development', 'Website Maintenance'];
 const BUDGETS = ['Starter', 'Business', 'Custom Platform'];
 
 const CONTACT_INFO = [

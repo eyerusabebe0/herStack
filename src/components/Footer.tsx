@@ -7,7 +7,7 @@ const NAV_ITEMS = [
   { id: 'pricing', label: 'Pricing' },
 ];
 
-const SERVICES = ['Website Development', 'System Development', 'Website Maintenance', 'Mobile App'];
+const SERVICES = ['Website Development', 'System Development', 'Website Maintenance'];
 
 
 
